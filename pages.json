@@ -1,0 +1,27 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/welcome/welcome"
+		}, {
+			"path": "pages/home/home"
+		}, {
+			"path": "pages/reg/reg"
+		}, {
+			"path": "pages/meal/meal_list"
+		}, {
+			"path": "pages/meal/meal_custom"
+		}, {
+			"path": "pages/pay/pay_scan"
+		}, {
+			"path": "pages/pay/pay_cash"
+		}, {
+			"path": "pages/pay/pay_success"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
