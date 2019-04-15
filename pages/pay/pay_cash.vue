@@ -103,7 +103,6 @@
 					}).then((res) => {
 						try {
 							countDown('clear');
-							this.$store.state.Log.d('zqtest', 'then传回。。。。。。');
 							this.$store.state.Log.d('zqtest', 'then传回。。。。。。' + res);
 							this.saveForm.showMoney = this.saveForm.showMoney * 1 + this.newMoney * 1;
 							this.saveForm.totalMoney = this.saveForm.showMoney * 100;
@@ -113,7 +112,6 @@
 								.meal_giveCoins_list);
 							this.saveForm.totalCoins = this.saveForm.extraCoins * 1 + this.saveForm.showMoney * 1;
 							this.newMoney = 0;
-							this.$store.state.Log.d('zqtest', '马上关了');
 							this.$refs.djModel.showModal = false;
 							this.initCallBack();
 						} catch (e) {

@@ -97,11 +97,8 @@
 			saveClick(authCode) {
 				this.saveForm.orderIndex = new Date().getTime();
 				this.saveForm.authCode = authCode;
-				console.log(this.saveForm)
 				getCoinPay(this.saveForm).then(res => {
 					this.saveForm.authCode = ''
-					console.log(res)
-					console.log(res.data[0].orderId)
 					uni.reLaunch({
 						url: `/pages/pay/pay_success?coins=${this.saveForm.totalCoins}&orderId=${res.data[0].orderId}`
 					})
